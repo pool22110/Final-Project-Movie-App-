@@ -1,0 +1,10 @@
+.tabb{
+    display: inline-flex;
+    padding: 2%;
+}
+
+.boxx{
+    margin: 10px;
+    padding: 5%;
+    width: 150px;  
+}

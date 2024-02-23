@@ -1,0 +1,22 @@
+
+.box{
+    margin-top: 4%;
+    width: 550px;
+    padding: 2.5%;
+    justify-content: space-between;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+table, th, td {
+    border: 2px solid black;
+    width: 50%;
+    text-align: center;
+    justify-content: space-around;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    border-radius: 5px;
+}
+
+.boot-btn{
+    background-color: rgb(127, 140, 255);
+    padding: 3;
+}

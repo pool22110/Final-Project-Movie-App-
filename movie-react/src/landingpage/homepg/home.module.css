@@ -1,0 +1,14 @@
+
+.containerhome{
+    background-color: rgb(1, 1, 70);
+    height: 100%;
+    padding: 0 140px;
+
+}
+.textos{
+    color: azure;
+    font-size: medium;
+    display: flex;
+    justify-items: center;
+    margin-left: 100px;
+}

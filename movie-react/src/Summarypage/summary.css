@@ -1,0 +1,22 @@
+.dashboardclass{
+    margin-left: 23%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 50%;
+    background-color: azure;
+
+}
+
+.ptickets{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 15px;
+    color: rgb(0, 0, 0);
+  
+   font-size: 30px; 
+}
+
+.background-ticket{
+    background-position: center;
+    text-align: center;
+}
