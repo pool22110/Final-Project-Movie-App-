@@ -1,0 +1,62 @@
+[{
+  "_id": {
+    "$oid": "65bb8a0abeb9296c05afe195"
+  },
+  "id": 1,
+  "last_login": {
+    "$date": "2024-02-16T11:09:47.154Z"
+  },
+  "name": "vento",
+  "email": "vebto@gmail.com",
+  "password": "pbkdf2_sha256$320000$X4Ct0QP7bcfL1AdM8mDSfT$nJMEwv4nAFZoxj7taXYGUTIfSOZsAdDfhG3RFLheaJI=",
+  "mobile": null,
+  "username": "vento",
+  "is_active": true,
+  "is_staff": true,
+  "is_superuser": true
+},
+{
+  "_id": {
+    "$oid": "65c6068acfb6c37f51312434"
+  },
+  "id": 2,
+  "last_login": null,
+  "name": "bugg",
+  "email": "bugg@gmail.com",
+  "password": "pbkdf2_sha256$320000$QgVCGdSwmrytQMVmpdVWmj$CWLX5lwueQ6EWjkV+jOJGLfml3SA8IS3kIKk7CFiEJQ=",
+  "mobile": null,
+  "username": "bugg",
+  "is_active": true,
+  "is_staff": false,
+  "is_superuser": false
+},
+{
+  "_id": {
+    "$oid": "65d998a3ea37a3c36ed3e0c3"
+  },
+  "id": 3,
+  "last_login": null,
+  "name": "free",
+  "email": "myntra1@gmail.com",
+  "password": "pbkdf2_sha256$320000$do3LB87VzQMV7YYP2gOzLP$tEbryIdKfMy+9WdZmLidxs+51LHIxZCrSPi/TnFkgtw=",
+  "mobile": null,
+  "username": "free",
+  "is_active": true,
+  "is_staff": false,
+  "is_superuser": false
+},
+{
+  "_id": {
+    "$oid": "65d9a3fed99390f86dc3cf0f"
+  },
+  "id": 4,
+  "last_login": null,
+  "name": "fox",
+  "email": "myntra@gmail.com",
+  "password": "pbkdf2_sha256$320000$6vOfO9vvKVA7qxCMrWMjX9$9pIeg5QXqQZOVnCW5ckJ9fpYsDZwmRmzwT3f9UKY6kM=",
+  "mobile": null,
+  "username": "fox",
+  "is_active": true,
+  "is_staff": false,
+  "is_superuser": false
+}]

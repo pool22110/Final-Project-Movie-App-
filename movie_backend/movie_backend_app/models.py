@@ -53,6 +53,7 @@ class Movie(models.Model):
     description = models.TextField()
     image=models.URLField()                  
     rating = models.FloatField(default=0)
+    altrating = models.CharField(max_length=10,default="U")
     movie_length = models.IntegerField()
     location = models.CharField(max_length=50,default="india")
     release_date = models.DateTimeField(default=None, null=True)

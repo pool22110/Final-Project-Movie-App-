@@ -38,54 +38,12 @@ class SignInView(APIView):
         return Response(serializer.errors, status=400)
     
 class MovieView(APIView):
-    # def get_permissions(self):
-    #     if self.request.method in ["Post","Put","Delete"]:
-    #         return [IsAuthenticated(),IsAdminUser()]
-    #     return[]
-    
-    # def get (self,request):
-    #     # if id:
-    #     #     try:
-    #     #         movie= Movie.objects.get(id=id)
-    #     #         serializer= MovieSerializer(movie).data
-    #     #         return Response(serializer,status=200)
-    #     #     except Movie.DoesNotExist:
-    #     #         return Response({"message":"Movie not found"},status=404)
-    #     id=request.GET.get("id",None)
-    #     query =request.GET.get("query",None)
-    #     language =request.GET.get("language",None)
-    #     rating =request.GET.get("rating",None)
-    #     genre =request.GET.get("genre",None)
-    #     page_num=request.GET.get("page",1)
 
-    #     moviesall=Movie.objects.all().order_by("id")
-    #     if id:
-    #         moviesall=moviesall.filter(id__iexact=int(id))
-    #     if query:
-    #         moviesall=moviesall.filter(Q(title__icontains=query)|Q(description__icontains=query))
-    #     if language:
-    #         moviesall=moviesall.filter(language__icontains=language)
-    #     if rating:
-    #         moviesall= moviesall.filter(rating__gte=int(rating))
-    #     if genre:
-    #         moviesall=moviesall.filter(genre__icontains=genre)
-    #     # paginate = Paginator(moviesall,5)
-    #     # page =paginate.get_page(page_num)
-    #     # page_data=page.object_list
-    #     serializer= MovieSerializer(moviesall,many=True)
-    #     return Response(
-    #         serializer,
-    #         # {
-    #         #     "total_movies":moviesall.count(),
-    #         #     "data":serializer,
-    #         # },
-
-    #         status=200
-    #     )
     def get(self, request):
         id=request.GET.get("id",None)
         name = request.GET.get("name",None)
         genre = request.GET.get("genre",None)
+        altrating=request.GET.get("altrating",None)
         language = request.GET.get("language",None)
         location = request.GET.get("location",None)
         movie_list = Movie.objects.all().order_by("id") 
@@ -101,6 +59,9 @@ class MovieView(APIView):
 
         if language:
             movie_list = movie_list.filter(language__icontains=language)
+        
+        if altrating:
+            movie_list = movie_list.filter(altrating__iexact=altrating)
 
         if location:
             movie_list = movie_list.filter(location__icontains=location)

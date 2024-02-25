@@ -1,0 +1,130 @@
+[{
+  "_id": {
+    "$oid": "65bb8f7cbeb9296c05afe19b"
+  },
+  "id": 1,
+  "user_id": 1,
+  "theater_id": 1,
+  "total_price": 240,
+  "seats": "A1,B1"
+},
+{
+  "_id": {
+    "$oid": "65c606aacfb6c37f51312435"
+  },
+  "id": 2,
+  "user_id": 2,
+  "theater_id": 1,
+  "total_price": 240,
+  "seats": "E9,D9"
+},
+{
+  "_id": {
+    "$oid": "65cf03d009b05cf8119aa04e"
+  },
+  "id": 3,
+  "user_id": 2,
+  "theater_id": 1,
+  "total_price": 240,
+  "seats": "C9,B9"
+},
+{
+  "_id": {
+    "$oid": "65cf4c3fa978582ff674853c"
+  },
+  "id": 4,
+  "user_id": 2,
+  "theater_id": 1,
+  "total_price": 240,
+  "seats": "E9,D9"
+},
+{
+  "_id": {
+    "$oid": "65cf4cc7a978582ff674853d"
+  },
+  "id": 5,
+  "user_id": 1,
+  "theater_id": 1,
+  "total_price": 240,
+  "seats": "E9,D9"
+},
+{
+  "_id": {
+    "$oid": "65d48ff8d362c25e8e665c0c"
+  },
+  "id": 6,
+  "user_id": 1,
+  "theater_id": 6,
+  "total_price": 240,
+  "seats": "D9,E9"
+},
+{
+  "_id": {
+    "$oid": "65d998ccea37a3c36ed3e0c4"
+  },
+  "id": 7,
+  "user_id": 3,
+  "theater_id": 8,
+  "total_price": 240,
+  "seats": "E9,D9"
+},
+{
+  "_id": {
+    "$oid": "65d9a473d99390f86dc3cf10"
+  },
+  "id": 8,
+  "user_id": 4,
+  "theater_id": 4,
+  "total_price": 240,
+  "seats": "D9,E9"
+},
+{
+  "_id": {
+    "$oid": "65d9a87dd99390f86dc3cf11"
+  },
+  "id": 9,
+  "user_id": 3,
+  "theater_id": 9,
+  "total_price": 240,
+  "seats": "E9,D9"
+},
+{
+  "_id": {
+    "$oid": "65d9f6eb15ef7d77ea9a2f44"
+  },
+  "id": 10,
+  "user_id": 3,
+  "theater_id": 5,
+  "total_price": 240,
+  "seats": "E9,D9"
+},
+{
+  "_id": {
+    "$oid": "65d9f71615ef7d77ea9a2f45"
+  },
+  "id": 11,
+  "user_id": 3,
+  "theater_id": 5,
+  "total_price": 240,
+  "seats": "A1,B1"
+},
+{
+  "_id": {
+    "$oid": "65d9f86a15ef7d77ea9a2f46"
+  },
+  "id": 12,
+  "user_id": 3,
+  "theater_id": 1,
+  "total_price": 240,
+  "seats": "E7,D7"
+},
+{
+  "_id": {
+    "$oid": "65d9fae115ef7d77ea9a2f47"
+  },
+  "id": 13,
+  "user_id": 3,
+  "theater_id": 3,
+  "total_price": 240,
+  "seats": "E9,D9"
+}]

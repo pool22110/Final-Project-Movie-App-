@@ -1,10 +1,26 @@
 .tabb{
     display: inline-flex;
     padding: 2%;
+    height: 100px;
 }
 
 .boxx{
-    margin: 10px;
-    padding: 5%;
-    width: 150px;  
+    margin: 5px;
+    padding: 4%;
+    width: 180px;  
 }
+.backgroundcontainer{
+background-color: rgb(165, 212, 255);
+height: 100%;
+padding: 0 140px;}
+
+.contentss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* Additional styles for the container */
+    /* width: 100%; */
+    height: 100vh; /*Example height*/
+    /* background-color: #f2f2f2; Example background color */
+  }

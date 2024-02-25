@@ -29,28 +29,6 @@ export default function Moviedetails() {
     ))
  },[id])
  
-  //  useEffect(() => {
-  //   const fetchMovieDetails = async () => {
-  //     console.log("test");
-  //     try {
-  //       //used string literal
-  //       const url = `http://127.0.0.1:8000/api/movies/?id=${id}`;
-  //       const response = await axios.get(url);
-  //       setmovies(response.data);
-  //     } catch (error) {
-  //       console.error("Error fetching movie details:", error);
-  //     }
-  //   };
-  //   fetchMovieDetails();
-  //   //passed moviename in the below list
-  // }, [id]);
-   
-
-
-
-
-
-
   
   if (!movie) {
     return <div>Loading...</div>;
@@ -66,10 +44,12 @@ export default function Moviedetails() {
           <div key={movie.id}>
             <img  className="img" src={movie.image} alt="" width={300} height={300} />
             <p>Movie Name: {movie.title}</p>
-            <p>Release Date: {movie.release_date}</p>
+            <p>About: {movie.description} </p>
+            {/* <p>Release Date: {movie.release_date}</p> */}
             <p>Genre: {movie.genre}</p>
+            <p>PG:{movie.altrating}</p>
             <p>Language: {movie.language} </p>
-            <p>Run Time: {movie.movie_length} mins </p>
+            {/* <p>Run Time: {movie.movie_length} mins </p> */}
             
             <Link to={{ pathname:`/theater/${movie.id}` }}>
               <Button className="bttn">Book Now</Button>

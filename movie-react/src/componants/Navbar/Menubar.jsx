@@ -43,7 +43,7 @@ export default function Navbar() {
         {
             label: 'Movies',
             icon: 'pi pi-fw pi-desktop',
-            url:"/allmovie"
+            url:"/moviepg"
            
         },
         {

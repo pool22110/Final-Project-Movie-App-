@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import React from "react";
 import './seatselect.css'
 import Navbar from "../componants/Navbar/Menubar";
@@ -10,17 +10,19 @@ import { Button } from 'primereact/button';
 const Seatselect = () => {
   const { theatername } = useParams();
   const { theaterid } = useParams();
+  const navigate=useNavigate()
 
   const [reservedseats, setReservedseat] = useState([]);
   const [emptyseats, setEmptyseat] = useState([]);
   const [selectedseats, setselectedseat] = useState([]);
-  const[userdetails,setuserdetails]=useState()
+  const [userdetails,setuserdetails]=useState()
   const [rows, setRows] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9]);
   const [coloumn, setColoum] = useState(["A", "B", "C", "D", "E"]);
   const [bookingResponse, setBookingresponse] = useState();
   const [theaterId, settheaterId] = useState();
   let user = localStorage.getItem("username")
-
+  
+ 
   useEffect(()=>{
     axios.get("http://127.0.0.1:8000/api/userid/?username="+user)
     .then((response)=>{
@@ -36,29 +38,28 @@ const Seatselect = () => {
   useEffect(() => {
     const fetchSeats = async () => {
       try {
-        const seat_url = `http://127.0.0.1:8000/api/seats/?theater=${theatername}`;
+        const seat_url = `http://127.0.0.1:8000/api/seats/?theateridd=${theaterid}`;
         const response = await axios.get(seat_url);
         setReservedseat(response.data);
+        console.log(reservedseats)
       } catch (error) {
         console.error("Error fetching seats", error);
       }
     };
     fetchSeats();
-  }, [theatername]);
+  }, [theaterid]);
 
   useEffect(() => {
-    const fetchid = async () => {
-      try {
-        const theater_url = `http://127.0.0.1:8000/api/theater/?theater=${theatername}`;
-        const response = await axios.get(theater_url);
-        settheaterId(response.data["0"]["id"]);
-      } catch (error) {
-        console.error("Error fetching theater:", error);
-      }
-    };
+    let token = localStorage.getItem("Access");
+    if (!token) {
+      // setLoginStatus(false);
+       navigate("/login");
+    } else {
+      ;
+    }
+  }, []);
 
-    fetchid();
-  }, [theatername]);
+
 
   const handelselectedseat = (seat) => {
     if (selectedseats.includes(seat)) {
@@ -87,7 +88,7 @@ const Seatselect = () => {
       );
       console.log("Post request sucessful:", response.data);
       setBookingresponse(
-        `total Price is ${seat.length * 150} and bookedseats: ${seat.join()}`
+        `Total Price is ${seat.length * 150} and bookedseats: ${seat.join()}`
       );
     } catch (error) {
       console.error("Error making POST request:", error);
@@ -115,7 +116,7 @@ const Seatselect = () => {
                       (selectedseats.includes(`${col}${row}`)
                         ? "btn-selected"
                         : "") +
-                      (reservedseats.includes(`${col}${row}`) ? "disable" : "")
+                      (reservedseats.includes(`${col}${row}`) ? "disabled" : "")
                     }
                     onClick={() => handelselectedseat(`${col}${row}`)}
                   >
@@ -152,7 +153,7 @@ const Seatselect = () => {
           {bookingResponse && (
             <div className="response-container">
               <h3>Booking Response:</h3>
-              <p>{JSON.stringify(bookingResponse, null, 2)}</p>
+              <p className="response-para">{JSON.stringify(bookingResponse, null, 2)}</p>
             </div>
           )}
         </center>

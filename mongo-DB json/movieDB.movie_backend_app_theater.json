@@ -1,0 +1,126 @@
+[{
+  "_id": {
+    "$oid": "65bb8af3beb9296c05afe199"
+  },
+  "id": 1,
+  "movie_id": 1,
+  "name": "Rox",
+  "city": "Kalyan",
+  "pincode": "421306",
+  "movie_timing": {
+    "$date": "2024-01-01T12:00:00.000Z"
+  },
+  "available_seats": 45
+},
+{
+  "_id": {
+    "$oid": "65cf42f1a978582ff674852c"
+  },
+  "id": 2,
+  "movie_id": 2,
+  "name": "Inox",
+  "city": "Kalyan",
+  "pincode": "421306",
+  "movie_timing": {
+    "$date": "2024-02-01T11:11:18.000Z"
+  },
+  "available_seats": 45
+},
+{
+  "_id": {
+    "$oid": "65cf43a6a978582ff674852e"
+  },
+  "id": 3,
+  "movie_id": 3,
+  "name": "Inox",
+  "city": "Kalyan",
+  "pincode": "421306",
+  "movie_timing": {
+    "$date": "2024-02-02T00:00:00.000Z"
+  },
+  "available_seats": 45
+},
+{
+  "_id": {
+    "$oid": "65cf48b3a978582ff6748530"
+  },
+  "id": 4,
+  "movie_id": 4,
+  "name": "Rox",
+  "city": "Mumbai",
+  "pincode": "421400",
+  "movie_timing": {
+    "$date": "2024-02-03T00:00:00.000Z"
+  },
+  "available_seats": 45
+},
+{
+  "_id": {
+    "$oid": "65cf48dda978582ff6748532"
+  },
+  "id": 5,
+  "movie_id": 5,
+  "name": "Inox",
+  "city": "Kalyan",
+  "pincode": "421306",
+  "movie_timing": {
+    "$date": "2024-02-04T00:00:00.000Z"
+  },
+  "available_seats": 45
+},
+{
+  "_id": {
+    "$oid": "65cf4903a978582ff6748534"
+  },
+  "id": 6,
+  "movie_id": 6,
+  "name": "Rox",
+  "city": "Mira Bhayandar",
+  "pincode": "421400",
+  "movie_timing": {
+    "$date": "2024-02-05T00:00:00.000Z"
+  },
+  "available_seats": 45
+},
+{
+  "_id": {
+    "$oid": "65cf4923a978582ff6748536"
+  },
+  "id": 7,
+  "movie_id": 7,
+  "name": "Inox",
+  "city": "Kalyan",
+  "pincode": "421306",
+  "movie_timing": {
+    "$date": "2024-02-06T11:38:07.000Z"
+  },
+  "available_seats": 45
+},
+{
+  "_id": {
+    "$oid": "65cf4947a978582ff6748538"
+  },
+  "id": 8,
+  "movie_id": 8,
+  "name": "Rox",
+  "city": "Mira Bhayandar",
+  "pincode": "421400",
+  "movie_timing": {
+    "$date": "2024-02-07T11:38:43.000Z"
+  },
+  "available_seats": 45
+},
+{
+  "_id": {
+    "$oid": "65cf49e1a978582ff674853a"
+  },
+  "id": 9,
+  "movie_id": 1,
+  "name": "Inox",
+  "city": "Mira Bhayandar",
+  "pincode": "421400",
+  "movie_timing": {
+    "$date": "2024-02-03T06:00:00.000Z"
+  },
+  "available_seats": 45
+}]

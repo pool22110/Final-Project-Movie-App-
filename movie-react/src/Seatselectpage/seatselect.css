@@ -22,7 +22,7 @@
 }
 
 .disabled {
-    opacity: 0.6;
+    opacity: 0.3;
     cursor: not-allowed;
 }
 
@@ -100,4 +100,9 @@ hr.style-seven {
     background-color: rgb(222, 232, 246);
     margin-top: 20px;
     border-radius: 20px;
+}
+
+.response-para{
+    font-weight: 500;
+    font-size: larger;
 }

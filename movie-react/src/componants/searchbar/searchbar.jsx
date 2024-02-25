@@ -6,6 +6,7 @@ import axios from "axios";
 // import Navbar from "../../componants/Navbar/navbar";
 import { Link } from "react-router-dom";
 import MovieCard from "../../landingpage/moviecard/moviecard";
+import Navbar from "../Navbar/Menubar";
 
 export default function DropdownBar() {
   const [selectedLanguage, setSelectedLanguage] = useState({});
@@ -33,18 +34,16 @@ export default function DropdownBar() {
   ];
   const rating = [
     { name: "",code:"ac"},
-    { name: "1", code: "NY" },
-    { name: "2", code: "RM" },
-    { name: "3", code: "LDN" },
-    { name: "4", code: "IST" },
-    { name: "5", code: "PRS" },
+    { name: "A", code: "NY" },
+    { name: "U", code: "RM" },
+    { name: "UA", code: "LDN" },
   ];
   // &language=${selectedLanguage}&rating=${selectedRating}
   const [movies,setmovies] = useState([]);
   console.log(movies)
 
   useEffect(()=>{
-      axios.get(`http://127.0.0.1:8000/api/movies/?genre=${selectedGenre["name"]}&language=${selectedLanguage["name"]}`)
+      axios.get(`http://127.0.0.1:8000/api/movies/?genre=${selectedGenre["name"]}&language=${selectedLanguage["name"]}&altrating=${selectedRating["name"]}`)
       .then((response)=>{
           console.log(response)
           setmovies(response.data)
@@ -53,9 +52,11 @@ export default function DropdownBar() {
 
 
   return (
-    <div>
-        <div className={styles.tabb}>
-                <span className="p-float-label ">
+    <>
+    <Navbar/>
+    <div className={styles.backgroundcontainer}>
+              <div className={styles.tabb}>
+                <span className="p-float-label">
                     <Dropdown
                     inputId="dd-genre"
                     value={selectedGenre}
@@ -77,30 +78,30 @@ export default function DropdownBar() {
                     onChange={(e) => setSelectedLanguage(e.value)}
                     options={Language}
                     optionLabel="name"
-                    className="w-full md:w-50rem"
+                    className={styles.boxx}
 
                     />
                     <label htmlFor="dd-lang">Select a Language</label>
                 </span>
 
-                {/* <span className="p-float-label">
+                <span className="p-float-label">
                     <Dropdown
-                    inputId="dd-rate"
+                    inputId="dd-alt-rate"
                     value={selectedRating}
                     onChange={(e) => setSelectedRating(e.value)}
                     options={rating}
                     optionLabel="name"
-                    showClear
-                    className="w-full md:w-14rem"
+                    // showClear
+                    className={styles.boxx}
 
                     />
                     <label htmlFor="dd-rate">Select a Rating</label>
-                </span> */}
+                </span>
             </div>
             <div className="row">
                     {
                         movies.map(m=>
-                            <div key={m.id} className="col-md-3">
+                            <div key={m.id} className="accordion">
                                <Link to={`/movie/${m.id}`}>
                                     <MovieCard key={m.id} movie={m} />
                                 </Link>
@@ -109,5 +110,6 @@ export default function DropdownBar() {
                 </div>
 
     </div>
+    </>
   );
 }                                                                                                                                                                                                       

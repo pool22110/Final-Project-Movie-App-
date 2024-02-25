@@ -1,0 +1,144 @@
+[{
+  "_id": {
+    "$oid": "65bb8adabeb9296c05afe197"
+  },
+  "id": 1,
+  "title": "Breaking Bad",
+  "director": "Vince Gilligan",
+  "genre": "Crime",
+  "language": "English",
+  "description": "A chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine with a former student in order to secure his family's future.",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBmR1UfShiKt6vY3J9tjztfpJvB7qM3xIQ_-TUF25_zZYzoTfz",
+  "rating": 5,
+  "movie_length": 250,
+  "release_date": {
+    "$date": "2022-03-01T00:00:00.000Z"
+  },
+  "location": "Usa"
+},
+{
+  "_id": {
+    "$oid": "65c084e76a84975e7ed83bcf"
+  },
+  "id": 2,
+  "title": "Fighter",
+  "director": "Siddharth Anand",
+  "genre": "Action",
+  "language": "Hindi",
+  "description": "Top IAF aviators come together in the face of imminent danger, to form Air Dragons. FIGHTER unfolds their camaraderie, brotherhood and battles, internal and external.",
+  "image": "https://media5.bollywoodhungama.in/wp-content/uploads/2023/12/FIGHTER-Akshay-Oberoi-turns-Weapon-System-Operator-Basheer-Khan-for-Siddharth-Anand-directorial-see-poster.jpg",
+  "rating": 3,
+  "movie_length": 160,
+  "release_date": {
+    "$date": "2024-01-24T12:00:00.000Z"
+  },
+  "location": "india"
+},
+{
+  "_id": {
+    "$oid": "65c085746a84975e7ed83bd1"
+  },
+  "id": 3,
+  "title": "K.G.F: Chapter 1",
+  "director": "Prashant Neel",
+  "genre": "Action",
+  "language": "Kannad",
+  "description": "In the 1970s, a gangster named Rocky goes undercover as a slave to assassinate the owner of a notorious gold mine known as the Kolar Gold Fields.",
+  "image": "https://cdn.cinematerial.com/p/297x/drgm806x/kgf-chapter-1-indian-movie-poster-md.jpg?v=1543059138",
+  "rating": 3,
+  "movie_length": 150,
+  "release_date": {
+    "$date": "2008-01-19T06:00:00.000Z"
+  },
+  "location": "Karnataka"
+},
+{
+  "_id": {
+    "$oid": "65c1c8805f1c07dae2402311"
+  },
+  "id": 4,
+  "title": "The Shawshank Redemption",
+  "director": "Frank Darabont",
+  "genre": "Drama",
+  "language": "English",
+  "description": "Over the course of several years, two convicts form a friendship, seeking consolation and, eventually, redemption through basic compassion.",
+  "image": "https://i.etsystatic.com/23402008/r/il/34add4/2331558160/il_794xN.2331558160_j0yi.jpg",
+  "rating": 5,
+  "movie_length": 155,
+  "release_date": {
+    "$date": "2008-01-20T12:00:00.000Z"
+  },
+  "location": "Europe"
+},
+{
+  "_id": {
+    "$oid": "65c1c9455f1c07dae2402313"
+  },
+  "id": 5,
+  "title": "3 Idiots",
+  "director": "Rajkumar Hirani",
+  "genre": "Comedy",
+  "language": "Hindi",
+  "description": "Two friends are searching for their long lost companion. They revisit their college days and recall the memories of their friend who inspired them to think differently, even as the rest of the world called them \"idiots\"",
+  "image": "https://m.media-amazon.com/images/I/81kuMqmCTNL._AC_SY741_.jpg",
+  "rating": 4,
+  "movie_length": 170,
+  "release_date": {
+    "$date": "2009-03-01T05:53:00.000Z"
+  },
+  "location": "Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65c1ca615f1c07dae2402315"
+  },
+  "id": 6,
+  "title": "Gangs of Wasseypur",
+  "director": "Anurag Kashyap",
+  "genre": "Crime",
+  "language": "Bojhpuri",
+  "description": "A successful Indian scientist returns to an Indian village to take his nanny to America with him and in the process rediscovers his roots.",
+  "image": "https://m.media-amazon.com/images/I/519EvjZpJzL.jpg",
+  "rating": 4,
+  "movie_length": 200,
+  "release_date": {
+    "$date": "2012-03-10T12:00:00.000Z"
+  },
+  "location": "Lukhnow"
+},
+{
+  "_id": {
+    "$oid": "65c1caf55f1c07dae2402317"
+  },
+  "id": 7,
+  "title": "Lagaan",
+  "director": "Ausutosh Gowaiker",
+  "genre": "Sports",
+  "language": "Hindi",
+  "description": "The people of a small village in Victorian India stake their future on a game of cricket against their ruthless British rulers",
+  "image": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/2d5589189737241.65aff8ed51be8.jpg",
+  "rating": 5,
+  "movie_length": 220,
+  "release_date": {
+    "$date": "2002-03-05T12:00:00.000Z"
+  },
+  "location": "Maharashtra"
+},
+{
+  "_id": {
+    "$oid": "65c1cb665f1c07dae2402319"
+  },
+  "id": 8,
+  "title": "Ventilator",
+  "director": "Rajesh Mapuskar",
+  "genre": "Family",
+  "language": "Marathi",
+  "description": "Gaju Kaka who never makes an appearance is breathing his last in the hospital few days before the Ganpati festival. As the news of his illness spreads, the entire extended family gathers to show their support, at the hospital. But as the family gathers and meets after a long time, a lot more happens in the hospital's waiting room",
+  "image": "https://m.media-amazon.com/images/I/71XbW1UueyL._SY741_.jpg",
+  "rating": 4,
+  "movie_length": 145,
+  "release_date": {
+    "$date": "2016-05-10T12:00:00.000Z"
+  },
+  "location": "Maharashtra"
+}]

@@ -7,8 +7,8 @@ import "./summary.css"
 export default function Summary () {
     const[data,setData] = useState([])
     const[theaterdata,setTheaterdata]= useState([])
-    // const username =localStorage.getItem('user')
-    const username ="vento"
+    const username =localStorage.getItem('username')
+    // const username ="vento"
     var url=''
 
     useEffect(() => {
@@ -52,8 +52,9 @@ export default function Summary () {
           {theaterdata[index] && (
             <>
               <p className="ptickets">Movie Name : {theaterdata[index].moviename}</p>
+              <p className="ptickets">Theater Name : {theaterdata[index].name}</p>
               <p className="ptickets">City : {theaterdata[index].city} </p>
-            <p className="ptickets">Show Time : {theaterdata[index].movie_timing}</p>
+              <p className="ptickets">Show Time : {theaterdata[index].movie_timing}</p>
               {/* Add other theater-related information here */}
             </>
           )}
