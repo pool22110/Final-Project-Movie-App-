@@ -3,9 +3,8 @@ import axios from 'axios';
 import {  useFormik } from "formik";
 import * as Yup from 'yup';
 import "./login.css"
-import { Link , useNavigate} from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 
-// import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import { InputText } from "primereact/inputtext";
 import { Password } from 'primereact/password';
 import { Button } from 'primereact/button';
@@ -45,7 +44,7 @@ const Login = () => {
 
             setRequestedResponse({
                 textMessage : 'Invalid Credes.!!',
-                alertClass: 'alert alert-danger',
+                alertClass: '--text-red-300',
             })
 
         }) 
@@ -93,7 +92,7 @@ const Login = () => {
                   // placeholder="Email"
                   className={
                     formik.touched.username && formik.errors.username
-                      ? "form-control is-invalid p-invalid"
+                      ? "form-control is-invalid p-invalid --text-red-300"
                       : "form-control"
                   }
                   value={formik.values.username}

@@ -6,7 +6,6 @@ import MovieCard from "../moviecard/moviecard";
 import { Banner } from "../banner/banner";
 import { useEffect, useState} from "react";
 import { Link } from "react-router-dom";
-import DropdownBar from "../../componants/searchbar/searchbar";
 
 
 

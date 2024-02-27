@@ -2,17 +2,14 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 import "./signup.css"
 
 import { InputText } from "primereact/inputtext";
-import { InputNumber } from 'primereact/inputnumber';
 import { Password } from 'primereact/password';
 import { Button } from 'primereact/button';
 
-// import "../node_modules/bootstrap/dist/css/bootstrap.css";
 
 
 const Signup = () => {
@@ -30,13 +27,13 @@ const Signup = () => {
   let navigate = useNavigate();
   const onSubmit = (values) => {
     console.log(values);
-    let userData = {
-      name: values.name,
-      email: values.email,
-      mobile: values.mobile,
-      password: values.password,
-      username: values.username,
-    };
+    // let userData = {
+    //   name: values.name,
+    //   email: values.email,
+    //   mobile: values.mobile,
+    //   password: values.password,
+    //   username: values.username,
+    // };
     axios
       .post('http://127.0.0.1:8000/api/signup/', values)
       .then(

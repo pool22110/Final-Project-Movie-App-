@@ -21,7 +21,7 @@ function Moviepage() {
 
 
     return ( 
-        <div className="">
+        <div className={styles.moviecontainer}>
             <Navbar/>
             <div className={styles.home}>
                 <div className="row">

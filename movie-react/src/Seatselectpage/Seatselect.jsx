@@ -4,7 +4,6 @@ import { useNavigate, useParams } from "react-router-dom";
 import React from "react";
 import './seatselect.css'
 import Navbar from "../componants/Navbar/Menubar";
-import { Button } from 'primereact/button';
 
 
 const Seatselect = () => {
@@ -13,20 +12,17 @@ const Seatselect = () => {
   const navigate=useNavigate()
 
   const [reservedseats, setReservedseat] = useState([]);
-  const [emptyseats, setEmptyseat] = useState([]);
   const [selectedseats, setselectedseat] = useState([]);
   const [userdetails,setuserdetails]=useState()
   const [rows, setRows] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9]);
   const [coloumn, setColoum] = useState(["A", "B", "C", "D", "E"]);
   const [bookingResponse, setBookingresponse] = useState();
-  const [theaterId, settheaterId] = useState();
   let user = localStorage.getItem("username")
   
  
   useEffect(()=>{
     axios.get("http://127.0.0.1:8000/api/userid/?username="+user)
     .then((response)=>{
-      // console.log(response)
       setuserdetails(response.data["0"]["id"])
       console.log(response.data["0"]["id"])
     })
@@ -101,7 +97,7 @@ const Seatselect = () => {
       <Navbar />
 
       <h1>{theatername}</h1>
-      {/* <h1>{theaterid}</h1> */}
+
       <h2>Ticket price is 150 </h2>
 
       <center>

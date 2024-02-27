@@ -8,7 +8,6 @@ export default function Summary () {
     const[data,setData] = useState([])
     const[theaterdata,setTheaterdata]= useState([])
     const username =localStorage.getItem('username')
-    // const username ="vento"
     var url=''
 
     useEffect(() => {
@@ -46,7 +45,6 @@ export default function Summary () {
           {data.map((ticket, index) => (
         <div className="dashboardclass" key={ticket.id}>
           <p className="ptickets">Ticketnumber : {index+1}</p>
-          {/* <p className="ptickets">Theater : {ticket.theater_id}</p> */}
           <p className="ptickets">Seats: {ticket.seats}</p>
           <p className="ptickets">Total Price : {ticket.total_price}</p>
           {theaterdata[index] && (

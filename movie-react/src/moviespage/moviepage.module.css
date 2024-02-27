@@ -1,6 +1,18 @@
 .home{
-    background-color: rgb(1, 1, 70);
+    /* background-color: rgb(1, 1, 70);
     height: 100%;
-    padding: 0 140px;
+    padding: 0 140px; */
+
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
 
 }
+
+/* .moviecontainer {
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+} */

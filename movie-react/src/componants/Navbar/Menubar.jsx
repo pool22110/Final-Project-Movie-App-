@@ -41,8 +41,8 @@ export default function Navbar() {
             url:'/home'
         },
         {
-            label: 'Movies',
-            icon: 'pi pi-fw pi-desktop',
+            label: 'Filter',
+            icon: 'pi pi-fw pi-filter',
             url:"/moviepg"
            
         },
@@ -52,15 +52,10 @@ export default function Navbar() {
             url:"/summary"
 
         },
-        // {
-        //     label: 'Quit',
-        //     icon: 'pi pi-fw pi-power-off',
-            
-        // }
+
     ];
 
     const start = <img alt="logo" src={logo} height="40" className="mr-2"></img>;
-    // const end = <Button label="Login" link className="w-full" onClick={handlelogin} />;
 
     return (
         

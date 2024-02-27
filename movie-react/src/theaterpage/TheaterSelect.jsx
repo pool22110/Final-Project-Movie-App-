@@ -39,7 +39,6 @@ export default function TheaterSelect() {
           <tbody>
             {theaters.map((theater) => (
               <tr key={theater.id}>
-                {/* <td>{theater.id}</td> */} 
                 <td>{theater.name}</td>
                 <td>{theater.city}</td>
                 <td>{theater.movie_timing}</td>

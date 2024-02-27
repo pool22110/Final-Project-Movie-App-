@@ -22,7 +22,6 @@ import Summary from "./Summarypage/Summary";
 
 function App() {
   return (
-    // <PrimeReactProvider>
     <Router>
       <Routes>
         
@@ -35,13 +34,9 @@ function App() {
         <Route path="/allmovie" element={<Moviepage/>}></Route>
         <Route path="/moviepg" element={<DropdownBar/>}></Route>
         <Route path="/summary" element={<Summary/>}></Route>  
-        
-
-        
-
+      
       </Routes>
     </Router>
-    // </PrimeReactProvider>
   );
 }
 
